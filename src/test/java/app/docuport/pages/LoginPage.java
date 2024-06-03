@@ -2,6 +2,7 @@ package app.docuport.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//label[.='Username or email']//following-sibling::input")

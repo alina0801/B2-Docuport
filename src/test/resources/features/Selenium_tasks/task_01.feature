@@ -15,11 +15,20 @@ Feature: Day 01 tasks
   Scenario: User successfully logs in and logs out of Docuport
     Given the user lands on the Docuport login page at "https://beta.docuport.app/"
     When the user logs in with the following credentials:
-      | email                 | password |
-      | b1g2_client@gmail.com | Group2   |
+      | email    | b1g2_client@gmail.com |
+      | password | Group2                |
     Then the user should see the dashboard indicating a successful login
     When the user clicks the logout button
     Then validate user is redirected to the login page
+
+  @day01_task_2
+  Scenario: Validate login functionality with missing credentials
+    Given the user lands on the Docuport login page at "https://beta.docuport.app/"
+    Then the user should see the placeholder "Username or email" in the "username" field
+    And the user should see the placeholder "Password" in the "password" field
+    When the user clicks the login button without entering username and password
+    Then the user should see the error message "Username is required" in the "username" field
+    And the user should see the error message "Password is required" in the "password" field
 
 
 

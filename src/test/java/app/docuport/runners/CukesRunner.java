@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
                   "html:target/default-html-reports"},
         features = "src/test/resources/features/",
         glue = "app/docuport/step_definitions/",
-        tags = "@day01_task_2",
-        dryRun = true // true for snippets
+        tags = "@day03_task_4",
+        dryRun = false // true for snippets
 )
 public class CukesRunner {
 

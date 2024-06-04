@@ -1,13 +1,9 @@
-package app.docuport.pages.LoopCamp_Vercel;
+package app.docuport.pages.loopcamp_vercel;
 
-import app.docuport.utilities.Driver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ForgotPasswordPage extends Vercel_BasePage {
     @FindBy(tagName = "h2")

@@ -1,4 +1,4 @@
-package app.docuport.pages.Docuport;
+package app.docuport.pages.docuport_page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

@@ -1,4 +1,4 @@
-package app.docuport.pages;
+package app.docuport.pages.feyruz_page;
 
 import app.docuport.utilities.Driver;
 import org.openqa.selenium.WebElement;

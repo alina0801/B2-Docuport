@@ -1,15 +1,11 @@
 package app.docuport.step_definitions.selenium_tasks;
 
-import app.docuport.pages.Docuport.LoginPage;
-import app.docuport.utilities.Driver;
+import app.docuport.pages.docuport_page.LoginPage;
 import io.cucumber.java.en.*;
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import static org.junit.Assert.assertTrue;
 
-public class Day01_task_2 {
+public class Day03_task_2 {
 
     LoginPage loginPage = new LoginPage();
 

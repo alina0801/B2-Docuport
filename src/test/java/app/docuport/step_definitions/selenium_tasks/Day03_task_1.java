@@ -1,9 +1,8 @@
 package app.docuport.step_definitions.selenium_tasks;
 
-import app.docuport.pages.Docuport.LoginPage;
+import app.docuport.pages.docuport_page.LoginPage;
 import app.docuport.utilities.Driver;
 import io.cucumber.java.en.*;
-import org.junit.Assert;
 
 import java.util.Map;
 
@@ -11,13 +10,9 @@ import static app.docuport.utilities.BrowserUtils.waitForClickablility;
 import static app.docuport.utilities.BrowserUtils.waitForVisibility;
 import static org.junit.Assert.assertEquals;
 
-public class Day01_task_1 {
+public class Day03_task_1 {
     LoginPage loginPage = new LoginPage();
 
-    @Given("the user lands on the Docuport login page at {string}")
-    public void the_user_lands_on_the_Docuport_login_page_at(String url) {
-        Driver.getDriver().get(url);
-    }
 
     @When("the user logs in with the following credentials:")
     public void the_user_logs_in_with_the_following_credentials(Map<String, String> loginCredentials) {

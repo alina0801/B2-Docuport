@@ -1,12 +1,10 @@
-package app.docuport.pages.LoopCamp_Vercel;
+package app.docuport.pages.etsy_page;
 
 import app.docuport.utilities.Driver;
 import org.openqa.selenium.support.PageFactory;
 
-public class Vercel_BasePage {
-
-    public Vercel_BasePage(){
+public abstract class EtsyBasePage {
+    public EtsyBasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
 }
